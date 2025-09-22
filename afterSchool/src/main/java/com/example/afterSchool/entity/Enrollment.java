@@ -1,16 +1,21 @@
 package com.example.afterSchool.entity;
+
+import com.example.afterSchool.entity.enums.EnrollmentStatus;
 import jakarta.persistence.*;
 import lombok.*;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.List;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "class_enrollments")
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
-public class ClassEnrollment {
+public class Enrollment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long enrollmentId;
+    private Integer enrollmentId;
 
     @ManyToOne
     @JoinColumn(name = "student_id", nullable = false)
@@ -18,18 +23,14 @@ public class ClassEnrollment {
 
     @ManyToOne
     @JoinColumn(name = "class_id", nullable = false)
-    private AfterschoolClass clazz;
+    private AfterSchoolClass afterSchoolClass;
 
     @Enumerated(EnumType.STRING)
-    private Status status;
+    private EnrollmentStatus status;
 
     @Column(precision = 5, scale = 2)
-    private Double attendanceRate;
+    private BigDecimal attendanceRate;
 
     private LocalDateTime appliedAt;
-
-    @OneToMany(mappedBy = "enrollment")
-    private List<ClassAttendance> attendances;
-
-    public enum Status { enrolled, cancelled }
 }
+

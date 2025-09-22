@@ -1,41 +1,40 @@
 package com.example.afterSchool.entity;
+
+import com.example.afterSchool.entity.enums.DayOfWeekEnum;
 import jakarta.persistence.*;
 import lombok.*;
+
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.List;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "afterschool_classes")
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
-public class AfterschoolClass {
+public class AfterSchoolClass {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long classId;
+    private Integer classId;
 
     @ManyToOne
     @JoinColumn(name = "teacher_id", nullable = false)
     private Teacher teacher;
 
-    @Column(nullable = false, length = 100)
+    @Column(length = 100, nullable = false)
     private String title;
 
     @Column(columnDefinition = "TEXT")
     private String description;
 
     @Enumerated(EnumType.STRING)
-    private DayOfWeek dayOfWeek;
+    private DayOfWeekEnum dayOfWeek;
 
     private LocalTime startTime;
     private LocalTime endTime;
+
     private Integer capacity;
+
     private LocalDateTime createdAt;
-
-    @OneToMany(mappedBy = "clazz")
-    private List<ClassEnrollment> enrollments;
-
-    @OneToMany(mappedBy = "clazz")
-    private List<ClassNotice> notices;
-
-    public enum DayOfWeek { Mon, Tue, Wed, Thu, Fri, Sat }
 }
