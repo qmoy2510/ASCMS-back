@@ -10,9 +10,17 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Entity
 @Table(name = "teacher")
+// 👈 시퀀스 생성기 추가
+@SequenceGenerator(
+        name = "TEACHER_SEQ_GENERATOR",
+        sequenceName = "TEACHER_SEQ",
+        initialValue = 1,
+        allocationSize = 1
+)
 public class Teacher {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // 👈 ID 생성 전략 변경
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "TEACHER_SEQ_GENERATOR")
     private Integer teacherId;
 
     @Column(nullable = false, length = 100)

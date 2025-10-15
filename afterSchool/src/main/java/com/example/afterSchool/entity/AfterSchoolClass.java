@@ -3,7 +3,6 @@ package com.example.afterSchool.entity;
 import com.example.afterSchool.entity.enums.DayOfWeekEnum;
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
@@ -13,9 +12,17 @@ import java.time.LocalTime;
 @AllArgsConstructor
 @Entity
 @Table(name = "afterschool_classes")
+// 👈 시퀀스 생성기 추가
+@SequenceGenerator(
+        name = "CLASS_SEQ_GENERATOR",
+        sequenceName = "CLASS_SEQ",
+        initialValue = 1,
+        allocationSize = 1
+)
 public class AfterSchoolClass {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // 👈 ID 생성 전략 변경
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "CLASS_SEQ_GENERATOR")
     private Integer classId;
 
     @ManyToOne

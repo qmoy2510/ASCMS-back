@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9fe18f80-6a7b-44cd-835c-a03efd75d6c6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/controller/AfterSchoolClassController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/dto/AfterSchoolClassRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/dto/AfterSchoolClassResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/AfterSchoolClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/AfterSchoolClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/Attendance.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/Attendance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/ClassNotice.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/ClassNotice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/Enrollment.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/Enrollment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/AfterSchoolClassRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/AfterSchoolClassRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/AttendanceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/AttendanceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/ClassNoticeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/ClassNoticeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/EnrollmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/EnrollmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/TeacherRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/TeacherRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/service/AfterSchoolClassService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="33LrXxOcoIfBlwdgliPrbbz7fpz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AfterSchoolApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="AfterSchoolApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="afterSchool" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.afterSchool.AfterSchoolApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9fe18f80-6a7b-44cd-835c-a03efd75d6c6" name="Changes" comment="" />
+      <created>1759107238985</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759107238985</updated>
+      <workItem from="1759107240576" duration="1540000" />
+      <workItem from="1759139829540" duration="1598000" />
+      <workItem from="1760484645597" duration="1019000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

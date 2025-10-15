@@ -10,9 +10,17 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Entity
 @Table(name = "class_notices")
+// 👈 시퀀스 생성기 추가
+@SequenceGenerator(
+        name = "NOTICE_SEQ_GENERATOR",
+        sequenceName = "NOTICE_SEQ",
+        initialValue = 1,
+        allocationSize = 1
+)
 public class ClassNotice {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // 👈 ID 생성 전략 변경
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "NOTICE_SEQ_GENERATOR")
     private Integer noticeId;
 
     @ManyToOne
