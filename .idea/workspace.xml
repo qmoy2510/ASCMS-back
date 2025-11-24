@@ -5,8 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fe18f80-6a7b-44cd-835c-a03efd75d6c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/enums/DayOfWeek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/AfterSchoolApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/AfterSchoolApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/controller/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/controller/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/controller/TeacherController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/dto/AttendanceDtos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/dto/ClassDtos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/dto/EnrollmentDtos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/dto/NoticeDtos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/dto/UserDtos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/AfterSchoolClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/AfterSchoolClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/Attendance.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/ClassAttendance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/ClassNotice.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/ClassNotice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/Enrollment.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/ClassEnrollment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/enums/AttendanceStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/enums/AttendanceStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/enums/DayOfWeekEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/enums/EnrollmentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/entity/enums/EnrollmentStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/AfterSchoolClassRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/AttendanceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/ClassNoticeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/EnrollmentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/repository/TeacherRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/service/AdminService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/java/com/example/afterSchool/service/TeacherService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterSchool/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/afterSchool/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,12 +46,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -35,25 +74,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.AfterSchoolApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.afterSchool [clean].executor": "Run",
+    "Maven.afterSchool [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.AfterSchoolApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/myCodes/Projects/afterSchoolNew",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="AfterSchoolApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="afterSchool" />
@@ -66,8 +112,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.27397.103" />
       </set>
     </attachedChunks>
   </component>
@@ -83,7 +129,19 @@
       <workItem from="1759139829540" duration="1598000" />
       <workItem from="1760484645597" duration="4901000" />
       <workItem from="1760593515626" duration="429000" />
-      <workItem from="1760916861587" duration="587000" />
+      <workItem from="1760916861587" duration="5707000" />
+      <workItem from="1761032229692" duration="6168000" />
+      <workItem from="1761195888744" duration="10000" />
+      <workItem from="1762092744782" duration="1660000" />
+      <workItem from="1762245463870" duration="4448000" />
+      <workItem from="1762403086655" duration="456000" />
+      <workItem from="1762765159563" duration="3133000" />
+      <workItem from="1762771774497" duration="2517000" />
+      <workItem from="1763129121962" duration="51000" />
+      <workItem from="1763799629149" duration="624000" />
+      <workItem from="1763818995202" duration="8319000" />
+      <workItem from="1763885733048" duration="12061000" />
+      <workItem from="1763930407591" duration="1583000" />
     </task>
     <servers />
   </component>

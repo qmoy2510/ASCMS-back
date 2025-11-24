@@ -4,34 +4,37 @@ import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
+@Getter
+@Builder // ✅ 이걸 추가해야 .builder() 사용 가능
+@AllArgsConstructor // ✅ Builder를 쓰려면 전체 생성자가 필요함
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Table(name = "teacher")
-// 👈 시퀀스 생성기 추가
-@SequenceGenerator(
-        name = "TEACHER_SEQ_GENERATOR",
-        sequenceName = "TEACHER_SEQ",
-        initialValue = 1,
-        allocationSize = 1
-)
 public class Teacher {
-    @Id
-    // 👈 ID 생성 전략 변경
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "TEACHER_SEQ_GENERATOR")
-    private Integer teacherId;
 
-    @Column(nullable = false, length = 100)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "teacher_id")
+    private Long id;
+
+    @Column(nullable = false, unique = true, length = 100)
     private String email;
 
-    @Column(nullable = false, length = 255)
-    private String passwordHash;
+    @Column(nullable = false)
+    private String password;
 
-    @Column(length = 50)
+    @Column(nullable = false, length = 50)
     private String name;
 
+    // [NEW] 휴대전화 번호 추가
+    @Column(name = "phone_number", nullable = false, length = 20)
+    private String phoneNumber;
+
+    @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
+
+    @PrePersist
+    public void prePersist() {
+        this.createdAt = LocalDateTime.now();
+    }
 }

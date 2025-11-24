@@ -1,41 +1,52 @@
 package com.example.afterSchool.entity;
 
+import com.example.afterSchool.entity.enums.NoticeType;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
+@Getter
+@Builder // ✅ 추가
+@AllArgsConstructor // ✅ 추가
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Table(name = "class_notices")
-// 👈 시퀀스 생성기 추가
-@SequenceGenerator(
-        name = "NOTICE_SEQ_GENERATOR",
-        sequenceName = "NOTICE_SEQ",
-        initialValue = 1,
-        allocationSize = 1
-)
 public class ClassNotice {
+
     @Id
-    // 👈 ID 생성 전략 변경
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "NOTICE_SEQ_GENERATOR")
-    private Integer noticeId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "notice_id")
+    private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "teacher_id", nullable = false)
-    private Teacher teacher;
-
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "class_id", nullable = false)
     private AfterSchoolClass afterSchoolClass;
 
-    @Column(length = 100, nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "teacher_id", nullable = false)
+    private Teacher teacher;
+
+    @Column(nullable = false, length = 100)
     private String title;
 
-    @Column(columnDefinition = "TEXT")
+    @Lob
+    @Column(nullable = false)
     private String content;
 
+    // [NEW] 공지 타입 추가 (Oracle에는 VARCHAR로 저장됨)
+    @Enumerated(EnumType.STRING)
+    @Column(name = "notice_type", nullable = false, length = 20)
+    private NoticeType noticeType;
+
+    @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
+
+    @PrePersist
+    public void prePersist() {
+        this.createdAt = LocalDateTime.now();
+        // 기본값 설정이 필요하다면 여기서 처리
+        if (this.noticeType == null) {
+            this.noticeType = NoticeType.COMMON;
+        }
+    }
 }

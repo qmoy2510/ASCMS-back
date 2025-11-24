@@ -1,47 +1,51 @@
 package com.example.afterSchool.entity;
 
-import com.example.afterSchool.entity.enums.DayOfWeekEnum;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
+@Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Table(name = "afterschool_classes")
-// 👈 시퀀스 생성기 추가
-@SequenceGenerator(
-        name = "CLASS_SEQ_GENERATOR",
-        sequenceName = "CLASS_SEQ",
-        initialValue = 1,
-        allocationSize = 1
-)
 public class AfterSchoolClass {
-    @Id
-    // 👈 ID 생성 전략 변경
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "CLASS_SEQ_GENERATOR")
-    private Integer classId;
 
-    @ManyToOne
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "class_id")
+    private Long id;
+
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "teacher_id", nullable = false)
     private Teacher teacher;
 
-    @Column(length = 100, nullable = false)
+    @Column(nullable = false, length = 100)
     private String title;
 
-    @Column(columnDefinition = "TEXT")
+    @Lob
     private String description;
 
-    @Enumerated(EnumType.STRING)
-    private DayOfWeekEnum dayOfWeek;
-
-    private LocalTime startTime;
-    private LocalTime endTime;
-
+    @Column(nullable = false)
     private Integer capacity;
 
+    @Column(name = "class_location", nullable = false, length = 100)
+    private String classLocation;
+
+    @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
+
+    // ▼▼▼ [여기 수정!] @Builder.Default 추가 ▼▼▼
+    // 이걸 붙여야 빌더 패턴을 써도 new ArrayList<>() 초기화가 유지됩니다.
+    @Builder.Default
+    @OneToMany(mappedBy = "afterSchoolClass", cascade = CascadeType.ALL)
+    private List<ClassSchedule> schedules = new ArrayList<>();
+
+    @PrePersist
+    public void prePersist() {
+        this.createdAt = LocalDateTime.now();
+    }
 }
